@@ -95,11 +95,14 @@
 
     <!-- Introduction -->
     <h3 id="introduction">Introduction</h3>
+    <div id="Introduction_InText">
     <p>
         Apple Watches have advanced from simple features, including heart rate and movement detection in 2014, to detecting atrial fibrillation and blood oxygen levels in 2024, a significant step that helps play a role in recognising problems before they escalate. This raises the question, “How long will it take for smartwatches to become an essential part of healthcare?”. The Apple Watch, Fitbit, and medical biosensors are all examples of technology that can monitor key vital signs. As healthcare systems increasingly adopt digital tools, my article explores whether these tools could indicate the next direction of modern medicine, examining the benefits and challenges associated with their use.
     </p>
+    </div>
 
     <!-- Section 1 -->
+    <div id="Analysis_InText">
     <h3 id="wearable-devices">What are wearable medical devices?</h3>
     <p>
         Wearable medical devices have become more common in modern healthcare by providing reliable, continuous health analysis that can’t be captured during appointments (Patel, 2012). These compact sensors collect data and can be grouped by the type of information they measure. For example, Apple Watches track electrical heart activity, muscle movement, or skin temperature, while medically prescribed wearables monitor markers such as glucose or lactate using small patches placed on the skin (Heikenfeld et al., 2018). Devices can also include environmental sensors that detect factors such as air quality or UV exposure (World Health Organization, 2021). They use built-in sensors and algorithms to convert measurements into information that the regular person can understand (Dias and Cunha, 2018). Understanding this highlights why these devices are increasingly important in healthcare.
@@ -157,6 +160,7 @@
     <p>
         As wearable tech advances, it's expected to play a larger role in medical care. New sensors are constantly being developed to address the limitations listed in the previous section, and these can track blood pressure and hydration levels, providing doctors with a larger array of data than current consumer products do (Bandodkar and Wang, 2014). Additionally, they could implement AI to analyse patterns and predict health risks before symptoms appear, improving treatment plans and early intervention (Piwek et al., 2016). Also, healthcare professionals are exploring ways to connect wearable data directly to a patient's health records, helping support remote care and address appointment delays. The full potential of wearables depends on regulations surrounding them, their accuracy, and patients' trust in this new technology, but developments suggest they will become an integral part of digital healthcare.
     </p>
+    </div>
 
     <!-- Conclusion -->
     <h3 id="conclusion">Conclusion</h3>
@@ -247,6 +251,7 @@
     </div>
 
     <!-- Simple meta info -->
+    <p id="totalWordCount"></p>
     <div class="meta">
         <p><strong>Last Modified Time stamp:</strong> <span id="lastModified"></span></p>
     </div>
@@ -255,6 +260,28 @@
         // show browser last modified – this updates when you commit new changes
         document.getElementById('lastModified').textContent = document.lastModified;
     </script>
+
+    <script>
+// Count words inside a specific section
+function countWords(id) {
+    const element = document.getElementById(id);
+    if (!element) return 0;
+    const text = element.innerText.trim();
+    return text.split(/\s+/).filter(word => word.length > 0).length;
+}
+
+function displayTotalWordCount() {
+    const intro = countWords("Introduction_InText");
+    const analysis = countWords("Analysis_InText");
+    const total = intro + analysis;
+
+    document.getElementById("totalWordCount").innerText =
+        "Total word count (Introduction + Discussion sections): " + total;
+}
+
+window.onload = displayTotalWordCount;
+</script>
+
 
 </body>
 </html>
