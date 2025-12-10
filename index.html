@@ -1,49 +1,254 @@
 <!DOCTYPE html>
-
 <html>
-
-  <head>
-    <img src="WebBanner2023.png" alt="Banner" width="900" height"300">
-      <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
-      <h2>Student URN: 6936833</h2>
-  <hr>
-  <h2 style="font-family:calibri;"><b>Conference paper: Bridge Deck Repairs</b></h2>
-  <hr>   
-    <!style for tables>
-      <style>
-            table {
-              font-family: arial, sans-serif;
-              border-collapse: collapse;
-              width 30%;
-
-
-            }
-
-            td, th {
-              border: 1px solid #dddddd;
-              text-align: left;
-              padding: 8px;
-            }
-
-            tr:nth-child(even) {
-              background-color: #dddddd;
-            }
-
-
-
-        
-      </style>
+<head>
+    <meta charset="utf-8">
+    <title>ENG0018 Conference Project - 6936833</title>
 
     <style>
-p.exl {
-  margin-left: 250px;
-}
-</style>
-  </head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
-      <style>
-        .mySlides {display:none;}
-      </style>
-  
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        h1, h2, h3 {
+            font-family: Calibri, Arial, sans-serif;
+        }
+
+        hr {
+            margin: 10px 0 20px 0;
+        }
+
+        /* Table styling */
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0 20px 0;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        /* TOC */
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 4px;
+        }
+
+        .references p {
+            margin-bottom: 6px;
+        }
+
+        .meta {
+            margin-top: 25px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner and header -->
+    <img src="WebBanner2023.png" alt="Banner" width="900" height="300">
+    <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
+    <h2>Student URN: 6936833</h2>
+    <hr>
+    <h2><b>Conference paper: Are Wearable Health Devices the Future of Medicine?</b></h2>
+    <hr>
+
+    <!-- Table of contents -->
+    <div class="toc">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#wearable-devices">What are wearable medical devices?</a></li>
+            <li><a href="#remote-monitoring">Benefits of remote monitoring</a></li>
+            <li><a href="#apple-watch-ecg">Case study: Apple Watch ECG</a></li>
+            <li><a href="#benefits-limitations">Benefits and limitations</a></li>
+            <li><a href="#future">Future of digital healthcare</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </div>
+
+    <!-- Abstract -->
+    <h3 id="abstract">Abstract</h3>
+    <p>
+        Smartwatches, heart-rate monitors, and glucose sensors are being introduced more frequently in modern healthcare, collecting real-time data that allows for easy monitoring of health conditions without the need for a doctor's visit. My article examines how these devices facilitate early diagnosis, remote monitoring, and disease management. Additionally, we discuss the benefits, which include convenience and reduced healthcare costs, while addressing challenges such as data accuracy, privacy concerns, and the cost to citizens. Lastly, we consider whether continued advances in wearable technology could transform medical practice and support more personalised healthcare in the future.
+    </p>
+
+    <!-- Introduction -->
+    <h3 id="introduction">Introduction</h3>
+    <p>
+        Apple Watches have advanced from simple features, including heart rate and movement detection in 2014, to detecting atrial fibrillation and blood oxygen levels in 2024, a significant step that helps play a role in recognising problems before they escalate. This raises the question, “How long will it take for smartwatches to become an essential part of healthcare?”. The Apple Watch, Fitbit, and medical biosensors are all examples of technology that can monitor key vital signs. As healthcare systems increasingly adopt digital tools, my article explores whether these tools could indicate the next direction of modern medicine, examining the benefits and challenges associated with their use.
+    </p>
+
+    <!-- Section 1 -->
+    <h3 id="wearable-devices">What are wearable medical devices?</h3>
+    <p>
+        Wearable medical devices have become more common in modern healthcare by providing reliable, continuous health analysis that can’t be captured during appointments (Patel, 2012). These compact sensors collect data and can be grouped by the type of information they measure. For example, Apple Watches track electrical heart activity, muscle movement, or skin temperature, while medically prescribed wearables monitor markers such as glucose or lactate using small patches placed on the skin (Heikenfeld et al., 2018). Devices can also include environmental sensors that detect factors such as air quality or UV exposure (World Health Organization, 2021). They use built-in sensors and algorithms to convert measurements into information that the regular person can understand (Dias and Cunha, 2018). Understanding this highlights why these devices are increasingly important in healthcare.
+    </p>
+
+    <!-- Section 2 -->
+    <h3 id="remote-monitoring">Benefits of remote monitoring</h3>
+    <p>
+        Remote monitoring is one of many advantages of wearable tech, as it allows information to be collected continuously in real time, rather than having to constantly book appointments with your GP, where waiting lists can stretch for weeks or months. For people with long-term conditions, doctors can observe changes much earlier than at appointments (Steinhubl et al., 2015). Continuous data helps identify abnormal patterns such as irregular heart rhythms or changes in sleep behaviour; these early warnings can help prevent minor problems from developing into fatal ones. Additionally, it reduces pressure on hospitals by reducing unnecessary visits and allowing them to focus on patients who require immediate assistance (Jimson and Pavel, 2022). It's convenient for patients, as it helps them stay connected to their health without worrying about medical jargon or long reports. These benefits highlight why remote monitoring is a key reason for integrating wearable devices into healthcare.
+    </p>
+
+    <!-- Section 3 -->
+    <h3 id="apple-watch-ecg">Case study: Apple Watch ECG</h3>
+    <p>
+        The Apple Watch, we all know it, and you probably love to use it to check your messages and call your friends. However, we’re going to be discussing the ECG feature, which can record a single-lead electrocardiogram from your wrist (An electrocardiogram is the test that records the electrical activity of the heart to check its rhythm and rate).  The watch uses electrical sensors to measure the heart’s electrical activity and identify irregular rhythms such as atrial fibrillation, a condition that can increase the risk of stroke (FDA, 2018).In a study involving over 400,000 participants, researchers found that the Apple Watch correctly identified irregular heart rhythms, providing early warnings that prompted check-ups (Turakhia et al., 2019). The Apple Watch can’t replace a fully clinical ECG, but doctors have reported cases where the watch helped detect conditions earlier than expected. Demonstrating the effectiveness of the Apple Watch EGC as it supports through real-time heart monitoring.
+    </p>
+
+    <!-- Section 4 -->
+    <h3 id="benefits-limitations">Benefits and limitations</h3>
+    <p>
+        As discussed, wearable devices offer clear advantages, but their use has also created some challenges to be considered. A major benefit is increased awareness and involvement in monitoring health. As they receive easy-to-understand information on their wrist in real time, it can be motivating, helping show patients where they need to improve, as the device serves as a daily reminder of whether they’re approaching their health goals (Wen et al., 2020). They can easily identify the habits they need to cut out, as well as provide doctors with key information to make quicker decisions. However, as they are newer technologies, a caveat is their inaccuracy, as sensors can be affected by movement, skin tone, or poor skin contact, leading to false alerts and missed warnings (Nelson and Allen, 2019). Privacy is another concern, as user data is stored by companies that may not always comply with the Data Protection Act 2018. Lastly, wearable devices are expensive, so they aren’t affordable for everyone, which risks there being health inequalities. These limitations show that wearable devices can support healthcare, but they must be used responsibly and under medical supervision.
+    </p>
+
+    <!-- Table 1 -->
+    <p><b>Table 1. Summary of the main benefits and limitations of wearable medical devices</b></p>
+    <table>
+        <tr>
+            <th>Benefits</th>
+            <th>Limitations</th>
+        </tr>
+        <tr>
+            <td>Allows continuous remote monitoring of health data</td>
+            <td>Sensor accuracy can vary due to movement, skin tone or poor contact</td>
+        </tr>
+        <tr>
+            <td>Helps detect health issues earlier than scheduled appointments</td>
+            <td>Risk of false positives or missed warnings</td>
+        </tr>
+        <tr>
+            <td>Reduces unnecessary hospital visits</td>
+            <td>Privacy concerns due to large amounts of personal data collected</td>
+        </tr>
+        <tr>
+            <td>Encourages patients to actively engage with their health</td>
+            <td>Dependence on smartphones or internet connections</td>
+        </tr>
+        <tr>
+            <td>Supports management of long-term conditions such as diabetes or heart issues</td>
+            <td>Not affordable for everyone, increasing health inequalities</td>
+        </tr>
+    </table>
+
+    <!-- Section 5 -->
+    <h3 id="future">Future of digital healthcare</h3>
+    <p>
+        As wearable tech advances, it's expected to play a larger role in medical care. New sensors are constantly being developed to address the limitations listed in the previous section, and these can track blood pressure and hydration levels, providing doctors with a larger array of data than current consumer products do (Bandodkar and Wang, 2014). Additionally, they could implement AI to analyse patterns and predict health risks before symptoms appear, improving treatment plans and early intervention (Piwek et al., 2016). Also, healthcare professionals are exploring ways to connect wearable data directly to a patient's health records, helping support remote care and address appointment delays. The full potential of wearables depends on regulations surrounding them, their accuracy, and patients' trust in this new technology, but developments suggest they will become an integral part of digital healthcare.
+    </p>
+
+    <!-- Conclusion -->
+    <h3 id="conclusion">Conclusion</h3>
+    <p>
+        To conclude, we examined whether medical devices could shape the future of healthcare by investigating how they collect data, support remote monitoring, and facilitate early diagnosis. The Apple Watch case study demonstrated how consumer devices can provide valuable health insights when combined with professional care. Although issues such as accuracy, data privacy, and unequal access to wearable technology prevent them from replacing medical professionals.
+    </p>
+
+    <!-- References -->
+    <h3 id="references">References</h3>
+    <div class="references">
+        <p>
+            Bandodkar, A.J. and Wang, J. (2014) ‘Non-invasive wearable electrochemical sensors: a review’,
+            <i>Trends in Analytical Chemistry</i>, 58, pp. 40–49.
+            <a href="https://www.sciencedirect.com/science/article/pii/S0165993614001095" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Dias, D. and Cunha, J.P.S. (2018) ‘Wearable health devices—vital sign monitoring, systems and technologies’,
+            <i>Sensors</i>, 18(8), p. 2414.
+            <a href="https://www.mdpi.com/1424-8220/18/8/2414" target="_blank">Link</a>
+        </p>
+
+        <p>
+            FDA (2018) <i>Apple Watch Series 4: De Novo classification request for electrocardiograph software</i>.
+            U.S. Food and Drug Administration.
+            <a href="https://www.fda.gov/" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Heikenfeld, J. <i>et al.</i> (2018) ‘Wearable sensors: modalities, challenges and prospects’,
+            <i>Lab on a Chip</i>, 18(2), pp. 217–248.
+            <a href="https://pubs.rsc.org/en/content/articlelanding/2018/lc/c7lc00914c" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Jimison, H. and Pavel, M. (2022) ‘Remote health monitoring technologies for chronic disease management’,
+            <i>Annual Review of Biomedical Engineering</i>, 24, pp. 1–26.
+            <a href="https://www.annualreviews.org/doi/abs/10.1146/annurev-bioeng-110220-025705" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Nelson, B.W. and Allen, N.B. (2019) ‘Accuracy of consumer wearable heart rate measurement devices:
+            a systematic review’, <i>PLOS ONE</i>, 14(5), p. e0216444.
+            <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0216444" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Patel, S., Park, H., Bonato, P., Chan, L. and Rodgers, M. (2012) ‘A review of wearable sensors and systems
+            with application in rehabilitation’, <i>Journal of NeuroEngineering and Rehabilitation</i>, 9(1), p. 21.
+            <a href="https://jneuroengrehab.biomedcentral.com/articles/10.1186/1743-0003-9-21" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Piwek, L., Ellis, D.A., Andrews, S. and Joinson, A. (2016) ‘The rise of consumer health wearables:
+            promises and barriers’, <i>PLOS Medicine</i>, 13(2), p. e1001953.
+            <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001953" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Steinhubl, S.R., Muse, E.D. and Topol, E.J. (2015) ‘The emerging field of mobile health’,
+            <i>Science Translational Medicine</i>, 7(283), pp. 1–3.
+            <a href="https://www.science.org/doi/10.1126/scitranslmed.aaa3487" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Turakhia, M.P. <i>et al.</i> (2019) ‘Large-scale assessment of a smartwatch to identify atrial fibrillation’,
+            <i>New England Journal of Medicine</i>, 381(20), pp. 1909–1917.
+            <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa1901183" target="_blank">Link</a>
+        </p>
+
+        <p>
+            Wen, D. <i>et al.</i> (2020) ‘Wearable devices for measuring physical activity: reliability and validity review’,
+            <i>JMIR mHealth and uHealth</i>, 8(1), p. e15430.
+            <a href="https://mhealth.jmir.org/2020/1/e15430/" target="_blank">Link</a>
+        </p>
+
+        <p>
+            World Health Organization (2021) <i>Digital health systems: wearable devices and health monitoring</i>.
+            WHO Digital Health Series.
+            <a href="https://www.who.int/health-topics/digital-health" target="_blank">Link</a>
+        </p>
+    </div>
+
+    <!-- Simple meta info -->
+    <div class="meta">
+        <p><strong>Last Modified Time stamp:</strong> <span id="lastModified"></span></p>
+    </div>
+
+    <script>
+        // show browser last modified – this updates when you commit new changes
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+
+</body>
 </html>
